@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>To do list</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>To-do list</h1>
+  <div id="to-do-wrapper">
+    <div id="tabs">
+      <ul>
+        <li><a href="#to-do-tab-content" class="tab active"><i class="fa fa-bookmark"></i>To do</a></li>
+        <li><a href="#done-tab-content" class="tab"><i class="fa fa-check"></i>Done</a></li>
+      </ul>
+    </div>
+    <!-- /#tabs -->
+    <div id="to-do-tab-content">
+      <div class="form-wrapper">
+        <form action="" id="add-form">
+          <label for="add-task"></label>
+          <input type="text" id="add-task" name="add-task" placeholder="Add task" /><input type="submit" value="Add" id="add-btn" />  
+        </form>
+        <!-- /#add-form -->
+        <div class="priorities">
+          <button class="choose-priorety low"></button>
+          <ul class="priorities-list">
+            <li class="priority">
+              <button class="low"></button>
+            </li>
+            <!-- /.priority -->
+            <li class="priority">
+              <button class="medium"></button>
+            </li>
+            <!-- /.priority -->
+            <li class="priority">
+              <button class="high"></button>
+            </li>
+            <!-- /.priority -->
+          </ul>
+          <!-- /.priorities-list -->
+        </div>
+        <!-- /.priorities -->
+      </div>
+      <!-- /.form-wrapper -->
+      <ul id="to-do-list"></ul>
+      <!-- /#to-do-list -->
+    </div>
+    <!-- /#to-do-tab-content -->
+    <div id="done-tab-content">
+      <button id="delete-all">Delete all</button>
+      <ul id="done-list"></ul>
+      <!-- /#done-list -->
+    </div>
+    <!-- /#done-tab-content -->
+  </div>
+  <!-- /#to-do-wrapper -->
+  
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

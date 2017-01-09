@@ -1,0 +1,262 @@
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 16, ../scss/style.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 19, ../scss/style.scss */
+body {
+  background: #efefef;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+/* line 28, ../scss/style.scss */
+h1 {
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  margin: 7px 0;
+  font-weight: 700;
+}
+
+/* line 36, ../scss/style.scss */
+#tabs li {
+  display: inline-block;
+}
+/* line 39, ../scss/style.scss */
+#tabs .tab {
+  color: #999;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  background: #efefef;
+  border: 1px transparent solid;
+}
+/* line 47, ../scss/style.scss */
+#tabs .tab.active {
+  color: #333;
+  border: 1px #333 solid;
+  border-bottom: none;
+  top: 2px;
+}
+/* line 53, ../scss/style.scss */
+#tabs .tab i {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* line 59, ../scss/style.scss */
+[id$="tab-content"] {
+  overflow: hidden;
+  *zoom: 1;
+  border: 1px #333 solid;
+  padding: 20px;
+}
+
+/* line 64, ../scss/style.scss */
+input,
+#delete-all {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+/* line 71, ../scss/style.scss */
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* line 75, ../scss/style.scss */
+#to-do-wrapper #add-btn, #delete-all {
+  background: transparent;
+  border: 1px #999 solid;
+}
+
+/* line 79, ../scss/style.scss */
+#to-do-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+}
+/* line 82, ../scss/style.scss */
+#to-do-wrapper input {
+  margin: 0;
+}
+/* line 85, ../scss/style.scss */
+#to-do-wrapper form {
+  margin-bottom: 20px;
+  width: 80%;
+  float: left;
+}
+/* line 90, ../scss/style.scss */
+#to-do-wrapper #add-task {
+  background: transparent;
+  border: none;
+  border-bottom: 1px #999 solid;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 30px;
+  width: 90%;
+}
+/* line 99, ../scss/style.scss */
+#to-do-wrapper #add-btn {
+  -moz-border-radius: none;
+  -webkit-border-radius: none;
+  border-radius: none;
+  width: 10%;
+  height: 36px;
+}
+
+/* line 107, ../scss/style.scss */
+.priorities {
+  position: relative;
+  width: 20%;
+  float: right;
+  text-align: center;
+  top: 10px;
+}
+/* line 113, ../scss/style.scss */
+.priorities button {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 3px #333 solid;
+  float: right;
+}
+/* line 120, ../scss/style.scss */
+.priorities .priorities-list {
+  position: absolute;
+  top: 105%;
+  right: 0;
+  display: none;
+}
+/* line 127, ../scss/style.scss */
+.priorities .priority {
+  display: inline-block;
+}
+
+/* line 132, ../scss/style.scss */
+.low {
+  background: #fc0 !important;
+}
+
+/* line 133, ../scss/style.scss */
+.medium {
+  background: #f93 !important;
+}
+
+/* line 134, ../scss/style.scss */
+.high {
+  background: #f30 !important;
+}
+
+/* line 138, ../scss/style.scss */
+#to-do-list li,
+#done-list li {
+  width: 100%;
+  background: #adadad;
+  padding: 10px 20px;
+  margin: 1px 0;
+  overflow: hidden;
+  position: relative;
+}
+/* line 146, ../scss/style.scss */
+#to-do-list button,
+#done-list button {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px #000 solid;
+  background: none;
+  float: right;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+/* line 155, ../scss/style.scss */
+#to-do-list .added-time,
+#done-list .added-time {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+/* line 162, ../scss/style.scss */
+#delete-all {
+  margin-bottom: 20px;
+}

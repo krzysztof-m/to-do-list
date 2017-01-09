@@ -1,0 +1,165 @@
+@import 'compass';
+@import 'compass/reset';
+
+$bg-color:#efefef;
+$default-priority-bg-color: #adadad;
+$low-priority-bg-color: #fc0;
+$medium-priority-bg-color: #f93;
+$high-priority-bg-color: #f30;
+
+$btn-width: 30px;
+$btn-priority-width: 20px;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  background: $bg-color;
+  font: {
+    family: 'Source Sans Pro', sans-serif;
+    size: 25px;
+    weight: 300;
+  }
+  line-height: 28px;
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  margin: 7px 0;
+  font-weight: 700;
+}
+#tabs {
+  li {
+    display: inline-block;
+  }
+  .tab {
+    color: #999;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    background: $bg-color;
+    border: 1px transparent solid;
+    &.active {
+      color: #333;
+      border: 1px #333 solid;
+      border-bottom: none;
+      top: 2px;
+    }
+    i {
+      font-size: 20px;
+      margin: 0 10px;
+    }
+  }
+}
+[id$="tab-content"] {
+  @include clearfix;
+  border: 1px #333 solid;
+  padding: 20px;
+}
+input,
+#delete-all {
+  font: {
+    family: 'Source Sans Pro', sans-serif;
+    weight: 300;
+  }
+}
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+%btn-form {
+  background: transparent;
+  border: 1px #999 solid;
+}
+#to-do-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  input {
+    margin: 0;
+  }
+  form {
+    margin-bottom: 20px;
+    width: 80%;
+    float: left;
+  }
+  #add-task {
+    background: transparent;
+    border: none;
+    border-bottom: 1px #999 solid;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 90%;
+  }
+  #add-btn {
+    @extend %btn-form;
+    @include border-radius(none);
+    width: 10%;
+    height: 36px;
+  }
+}
+
+.priorities {
+  position: relative;
+  width: 20%;
+  float: right;
+  text-align: center;
+  top: 10px;
+  button {
+    @include border-radius(50%);
+    width: $btn-priority-width;
+    height: $btn-priority-width;
+    border: 3px #333 solid;
+    float: right;
+  }
+  .priorities-list {
+    position: absolute;
+    top: 105%;
+    right: 0;
+    display: none;
+    //background-color: #fff;
+  }
+  .priority {
+    display: inline-block;
+  }
+}
+
+.low { background: $low-priority-bg-color !important }
+.medium { background: $medium-priority-bg-color !important }
+.high { background: $high-priority-bg-color !important }
+
+#to-do-list,
+#done-list {
+  li {
+    width: 100%;
+    background: $default-priority-bg-color;
+    padding: 10px 20px;
+    margin: 1px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  button {
+    @include border-radius(50%);
+    border: 1px #000 solid;
+    background: none;
+    float: right;
+    margin: 0 10px;
+    width: $btn-width;
+    height: $btn-width;
+  }
+  .added-time {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px 0;
+  }
+}
+#delete-all {
+  @extend %btn-form;
+  margin-bottom: 20px;
+}
